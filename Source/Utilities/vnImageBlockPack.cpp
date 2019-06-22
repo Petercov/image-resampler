@@ -1,5 +1,5 @@
 
-#include "vnImageBlock.h"
+#include "Utilities/vnImageBlock.h"
 
 VN_STATUS vnPackFloatChannel( CONST FLOAT64 & pInChannel, UINT8 uiChannelRate, UINT8 * pRawChannel )
 {

@@ -1,7 +1,7 @@
 
-#include "vnImageSpline.h"
+#include "Kernels/vnImageSpline.h"
 
-#include "../Utilities/vnImageBlock.h"
+#include "Utilities/vnImageBlock.h"
 
 VN_STATUS vnSplineKernel( CONST CVImage & pSrcImage, FLOAT32 fX, FLOAT32 fY, UINT8 * pRawOutput )
 {

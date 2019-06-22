@@ -1,5 +1,5 @@
 
-#include "vnImageBlock.h"
+#include "Utilities/vnImageBlock.h"
 
 VN_STATUS vnConvertBlock( CONST VN_PIXEL_BLOCK & pSrc, VN_IMAGE_FORMAT destFormat, VN_PIXEL_BLOCK * pDest )
 {

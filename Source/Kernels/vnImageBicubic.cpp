@@ -1,7 +1,7 @@
 
-#include "vnImageBicubic.h"
+#include "Kernels/vnImageBicubic.h"
 
-#include "../Utilities/vnImageBlock.h"
+#include "Utilities/vnImageBlock.h"
 
 VN_STATUS vnBicubicKernel( CONST CVImage & pSrcImage, FLOAT32 fCoeffB, FLOAT32 fCoeffC, FLOAT32 fX, FLOAT32 fY, UINT8 * pRawOutput )
 {

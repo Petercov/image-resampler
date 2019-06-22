@@ -1,7 +1,7 @@
 
-#include "vnImageScale.h"
+#include "Operators/vnImageScale.h"
 
-#include "../Operators/vnImageClone.h"
+#include "Operators/vnImageClone.h"
 
 VN_STATUS vnBresenhamScaleLine( UINT8 * pSrcBuffer, UINT32 uiSrcLength, UINT32 uiSrcStride, UINT32 uiPixelPitch, UINT8 * pDestBuffer, UINT32 uiDestLength, UINT32 uiDestStride )
 {

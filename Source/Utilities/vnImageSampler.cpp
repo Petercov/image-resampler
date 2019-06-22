@@ -1,6 +1,6 @@
 
-#include "vnImageSampler.h"
-#include "vnImageBlock.h"
+#include "Utilities/vnImageSampler.h"
+#include "Utilities/vnImageBlock.h"
 
 VN_STATUS vnSampleImage( CONST CVImage & pSrcImage, 
                          VN_IMAGE_KERNEL_TYPE uiKernel, 

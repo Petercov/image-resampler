@@ -1,7 +1,7 @@
 
-#include "vnImageResize.h"
+#include "Operators/vnImageResize.h"
 
-#include "../Operators/vnImageClone.h"
+#include "Operators/vnImageClone.h"
 
 VN_STATUS vnResizeImageNonSeparable( CONST CVImage & pSrcImage, VN_IMAGE_KERNEL_TYPE uiKernel, FLOAT32 fHRatio, FLOAT32 fVRatio, CVImage * pDestImage )
 {

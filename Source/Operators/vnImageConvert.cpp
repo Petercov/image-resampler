@@ -1,9 +1,9 @@
 
-#include "vnImageConvert.h"
+#include "Operators/vnImageConvert.h"
 
-#include "../Base/vnMath.h"
-#include "../Utilities/vnImageBlock.h"
-#include "../Operators/vnImageClone.h"
+#include "Base/vnMath.h"
+#include "Utilities/vnImageBlock.h"
+#include "Operators/vnImageClone.h"
 
 VN_STATUS vnConvertImage( CONST CVImage & pSrcImage, VN_IMAGE_FORMAT destFormat, CVImage * pDestImage )
 {

@@ -35,64 +35,64 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Source\Base\vnBase.h">
+    <ClInclude Include="..\Include\Base\vnBase.h">
       <Filter>Header Files\Base</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Base\vnHalf.h">
+    <ClInclude Include="..\Include\Base\vnHalf.h">
       <Filter>Header Files\Base</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Base\vnImage.h">
+    <ClInclude Include="..\Include\Base\vnImage.h">
       <Filter>Header Files\Base</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Base\vnImageFormat.h">
+    <ClInclude Include="..\Include\Base\vnImageFormat.h">
       <Filter>Header Files\Base</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Base\vnMath.h">
+    <ClInclude Include="..\Include\Base\vnMath.h">
       <Filter>Header Files\Base</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Utilities\vnImageBlock.h">
+    <ClInclude Include="..\Include\Utilities\vnImageBlock.h">
       <Filter>Header Files\Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Utilities\vnImageSampler.h">
+    <ClInclude Include="..\Include\Utilities\vnImageSampler.h">
       <Filter>Header Files\Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Operators\vnImageClone.h">
+    <ClInclude Include="..\Include\Operators\vnImageClone.h">
       <Filter>Header Files\Operators</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Operators\vnImageConvert.h">
+    <ClInclude Include="..\Include\Operators\vnImageConvert.h">
       <Filter>Header Files\Operators</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Operators\vnImageResize.h">
+    <ClInclude Include="..\Include\Operators\vnImageResize.h">
       <Filter>Header Files\Operators</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Operators\vnImageScale.h">
+    <ClInclude Include="..\Include\Operators\vnImageScale.h">
       <Filter>Header Files\Operators</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Kernels\vnImageGaussian.h">
+    <ClInclude Include="..\Include\Kernels\vnImageGaussian.h">
       <Filter>Header Files\Kernels</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Kernels\vnImageLanczos.h">
+    <ClInclude Include="..\Include\Kernels\vnImageLanczos.h">
       <Filter>Header Files\Kernels</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Kernels\vnImageNearest.h">
+    <ClInclude Include="..\Include\Kernels\vnImageNearest.h">
       <Filter>Header Files\Kernels</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Kernels\vnImageSpline.h">
+    <ClInclude Include="..\Include\Kernels\vnImageSpline.h">
       <Filter>Header Files\Kernels</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Kernels\vnImageAverage.h">
+    <ClInclude Include="..\Include\Kernels\vnImageAverage.h">
       <Filter>Header Files\Kernels</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Kernels\vnImageBicubic.h">
+    <ClInclude Include="..\Include\Kernels\vnImageBicubic.h">
       <Filter>Header Files\Kernels</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Kernels\vnImageBilinear.h">
+    <ClInclude Include="..\Include\Kernels\vnImageBilinear.h">
       <Filter>Header Files\Kernels</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\Kernels\vnImageCoverage.h">
+    <ClInclude Include="..\Include\Kernels\vnImageCoverage.h">
       <Filter>Header Files\Kernels</Filter>
     </ClInclude>
-    <ClInclude Include="..\Source\vnImagine.h">
+    <ClInclude Include="..\Include\vnImagine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -147,9 +147,6 @@
     </ClCompile>
     <ClCompile Include="..\Source\Kernels\vnImageCoverage.cpp">
       <Filter>Source Files\Kernels</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Source\Tutorial.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

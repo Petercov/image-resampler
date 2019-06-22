@@ -1,5 +1,5 @@
 
-#include "vnImage.h"
+#include "Base\vnImage.h"
 
 CVImage::CVImage()
 {

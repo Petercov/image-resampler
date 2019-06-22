@@ -1,7 +1,7 @@
 
-#include "vnImageGaussian.h"
+#include "Kernels/vnImageGaussian.h"
 
-#include "../Utilities/vnImageBlock.h"
+#include "Utilities/vnImageBlock.h"
 
 VN_STATUS vnGaussianKernel( CONST CVImage & pSrcImage, FLOAT32 fX, FLOAT32 fY, FLOAT32 fRadius, UINT8 * pRawOutput )
 {

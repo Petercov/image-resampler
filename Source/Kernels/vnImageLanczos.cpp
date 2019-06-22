@@ -1,7 +1,7 @@
 
-#include "vnImageLanczos.h"
+#include "Kernels/vnImageLanczos.h"
 
-#include "../Utilities/vnImageBlock.h"
+#include "Utilities/vnImageBlock.h"
 
 VN_STATUS vnLanczosKernel( CONST CVImage & pSrcImage, FLOAT32 fCoeffN, FLOAT32 fX, FLOAT32 fY, UINT8 * pRawOutput )
 {

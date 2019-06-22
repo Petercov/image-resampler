@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -14,18 +14,19 @@
     <ProjectGuid>{4CCD5434-3038-418C-868B-F432E0A7FB8D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Imagine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -54,6 +55,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -69,6 +71,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -78,26 +81,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\Source\Base\vnBase.h" />
-    <ClInclude Include="..\Source\Base\vnHalf.h" />
-    <ClInclude Include="..\Source\Base\vnImage.h" />
-    <ClInclude Include="..\Source\Base\vnImageFormat.h" />
-    <ClInclude Include="..\Source\Base\vnMath.h" />
-    <ClInclude Include="..\Source\Kernels\vnImageAverage.h" />
-    <ClInclude Include="..\Source\Kernels\vnImageBicubic.h" />
-    <ClInclude Include="..\Source\Kernels\vnImageBilinear.h" />
-    <ClInclude Include="..\Source\Kernels\vnImageCoverage.h" />
-    <ClInclude Include="..\Source\Kernels\vnImageGaussian.h" />
-    <ClInclude Include="..\Source\Kernels\vnImageLanczos.h" />
-    <ClInclude Include="..\Source\Kernels\vnImageNearest.h" />
-    <ClInclude Include="..\Source\Kernels\vnImageSpline.h" />
-    <ClInclude Include="..\Source\Operators\vnImageClone.h" />
-    <ClInclude Include="..\Source\Operators\vnImageConvert.h" />
-    <ClInclude Include="..\Source\Operators\vnImageResize.h" />
-    <ClInclude Include="..\Source\Operators\vnImageScale.h" />
-    <ClInclude Include="..\Source\Utilities\vnImageBlock.h" />
-    <ClInclude Include="..\Source\Utilities\vnImageSampler.h" />
-    <ClInclude Include="..\Source\vnImagine.h" />
+    <ClInclude Include="..\Include\Base\vnBase.h" />
+    <ClInclude Include="..\Include\Base\vnHalf.h" />
+    <ClInclude Include="..\Include\Base\vnImage.h" />
+    <ClInclude Include="..\Include\Base\vnImageFormat.h" />
+    <ClInclude Include="..\Include\Base\vnMath.h" />
+    <ClInclude Include="..\Include\Kernels\vnImageAverage.h" />
+    <ClInclude Include="..\Include\Kernels\vnImageBicubic.h" />
+    <ClInclude Include="..\Include\Kernels\vnImageBilinear.h" />
+    <ClInclude Include="..\Include\Kernels\vnImageCoverage.h" />
+    <ClInclude Include="..\Include\Kernels\vnImageGaussian.h" />
+    <ClInclude Include="..\Include\Kernels\vnImageLanczos.h" />
+    <ClInclude Include="..\Include\Kernels\vnImageNearest.h" />
+    <ClInclude Include="..\Include\Kernels\vnImageSpline.h" />
+    <ClInclude Include="..\Include\Operators\vnImageClone.h" />
+    <ClInclude Include="..\Include\Operators\vnImageConvert.h" />
+    <ClInclude Include="..\Include\Operators\vnImageResize.h" />
+    <ClInclude Include="..\Include\Operators\vnImageScale.h" />
+    <ClInclude Include="..\Include\Utilities\vnImageBlock.h" />
+    <ClInclude Include="..\Include\Utilities\vnImageSampler.h" />
+    <ClInclude Include="..\Include\vnImagine.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\Base\vnHalf.cpp" />
@@ -113,7 +116,6 @@
     <ClCompile Include="..\Source\Operators\vnImageConvert.cpp" />
     <ClCompile Include="..\Source\Operators\vnImageResize.cpp" />
     <ClCompile Include="..\Source\Operators\vnImageScale.cpp" />
-    <ClCompile Include="..\Source\Tutorial.cpp" />
     <ClCompile Include="..\Source\Utilities\vnImageBlock.cpp" />
     <ClCompile Include="..\Source\Utilities\vnImageBlockPack.cpp" />
     <ClCompile Include="..\Source\Utilities\vnImageBlockUnpack.cpp" />

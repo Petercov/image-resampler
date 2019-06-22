@@ -1,7 +1,7 @@
 
-#include "vnImageBilinear.h"
+#include "Kernels/vnImageBilinear.h"
 
-#include "../Utilities/vnImageBlock.h"
+#include "Utilities/vnImageBlock.h"
 
 VN_STATUS vnLerpBlocks( CONST VN_PIXEL_BLOCK & blockA, CONST VN_PIXEL_BLOCK & blockB, FLOAT32 fDelta, VN_PIXEL_BLOCK * pOutBlock )
 {
